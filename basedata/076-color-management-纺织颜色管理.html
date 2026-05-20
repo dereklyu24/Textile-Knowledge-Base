@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>纺织颜色管理——对色光源色差控制</title>
+<meta name="description" content="详解纺织行业颜色管理体系，包括标准光源箱使用规范、D65/TL84/A/F光源区别、CIE Lab色度系统与色差ΔE计算、分光光度计与目测对色方法，纺织对色人员专业指南。">
+<meta name="keywords" content="纺织颜色管理,标准光源,D65光源,TL84,色差ΔE,CIE Lab,分光光度计,标准光源箱,对色灯箱,灰色样卡">
+<meta name="author" content="纺织知识库">
+<meta property="og:title" content="纺织颜色管理——对色光源色差控制">
+<meta property="og:description" content="详解纺织行业标准光源对色与色差控制方法。">
+<meta property="og:type" content="article">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://textile-knowledge.com/076-color-management-纺织颜色管理.html">
+<style>
+body{font-family:-apple-system,'Microsoft YaHei',sans-serif;line-height:1.8;max-width:800px;margin:0 auto;padding:20px;color:#333;}
+h1{color:#1a1a1a;border-bottom:2px solid #e8a87c;padding-bottom:10px;}
+h2{color:#2c3e50;margin-top:30px;}
+h3{color:#34495e;margin-top:20px;}
+table{width:100%;border-collapse:collapse;margin:15px 0;}
+th,td{border:1px solid #ddd;padding:10px;text-align:left;}
+th{background-color:#f5f5f5;}
+.meta{color:#666;font-size:14px;margin:10px 0 20px;}
+.summary{background:#f9f9f9;padding:15px;border-left:4px solid #e8a87c;margin:20px 0;}
+.tag{display:inline-block;background:#e8e8e8;padding:2px 8px;border-radius:3px;font-size:12px;margin-right:5px;}
+ul,ol{padding-left:20px;}
+footer{margin-top:40px;padding-top:20px;border-top:1px solid #eee;font-size:14px;color:#999;}
+.recommend{background:#f0f7ff;padding:15px;border-radius:5px;margin:20px 0;}
+.recommend a{display:block;padding:3px 0;color:#2980b9;text-decoration:none;}
+.recommend a:hover{text-decoration:underline;}
+</style></head>
+<body><article>
+<header><h1>纺织颜色管理——对色光源色差控制</h1>
+<div class="meta"><span>分类：纺织基础</span> | <span>发布日期：2026-05-20</span> | <span class="tag">颜色管理</span><span class="tag">标准光源</span><span class="tag">色差</span><span class="tag">ΔE</span></div></header>
+
+<div class="summary"><strong>导语：</strong>颜色是纺织品最重要的外观质量指标之一。不同光源下同一块面料会呈现不同的颜色，这就是<strong>同色异谱</strong>现象。为了准确评价和控制颜色，纺织行业建立了标准光源对色体系、CIE Lab色度系统以及ΔE色差评价方法。本文系统介绍纺织颜色管理的核心技术与实操要点。</div>
+
+<h2>一、标准光源与对色环境</h2>
+<p>标准光源箱（也称对色灯箱）是纺织行业颜色评价的基本工具。箱体内部通常涂有中性灰（Munsell N5～N7），确保反射光不受箱壁颜色干扰。观察时试样应放置在灯箱中央，光源以<strong>45度角</strong>照射，观察者垂直于试样表面目测，这样的几何条件称为<strong>45/0（45度照明/0度接收）</strong>。不同客户可能指定不同的对色光源，常见标准光源包括：<strong>D65</strong>（色温6500K）模拟北方天空日光，为国际通用标准光源；<strong>TL84</strong>（色温4000K）模拟欧洲商店典型荧光灯光源；<strong>A光源</strong>（色温2856K）模拟白炽灯，用于评价暖光环境下的颜色表现；<strong>F光源系列</strong>（F2、F7、F11等）模拟不同荧光灯。对色时须将试样与标准样品并排放置，在同一光源下快速切换观察，以免眼睛产生视觉疲劳导致判断偏差。</p>
+
+<table>
+<thead><tr><th>光源代号</th><th>色温（K）</th><th>显色指数Ra</th><th>模拟光源</th><th>典型应用场景</th></tr></thead>
+<tbody>
+<tr><td><strong>D65</strong></td><td>6500</td><td>≥92</td><td>平均北方天空日光</td><td>国际通用对色标准，ISO/GB标准首选</td></tr>
+<tr><td><strong>D50</strong></td><td>5000</td><td>≥92</td><td>中午天光</td><td>印刷及纺织品评级辅助光源</td></tr>
+<tr><td><strong>TL84</strong></td><td>4000</td><td>≥85</td><td>欧洲商店荧光灯（三基色）</td><td>欧洲客户常用对色光源</td></tr>
+<tr><td><strong>A</strong></td><td>2856</td><td>≥95</td><td>白炽灯（钨丝灯）</td><td>家庭照明环境下的颜色评价</td></tr>
+<tr><td><strong>F11</strong>（TL83）</td><td>4000</td><td>≥80</td><td>窄带荧光灯</td><td>美国商店典型光源</td></tr>
+<tr><td><strong>UV</strong></td><td>—</td><td>—</td><td>紫外灯（365nm）</td><td>检测荧光增白剂及荧光染料</td></tr>
+</tbody></table>
+
+<h2>二、颜色测量与色差评价体系</h2>
+<p>CIE（国际照明委员会）建立的<strong>CIE Lab</strong>色度系统是纺织颜色定量评价的基础。L*表示明度（0为黑色，100为白色），a*表示红绿色度（正值为红，负值为绿），b*表示黄蓝色度（正值为黄，负值为蓝）。通过测量标准样和试样的Lab值，可以计算出<strong>色差ΔE</strong>。<strong>ΔE*ab</strong>是基本色差公式，ΔE*cmc（已加入明度和彩度的权重调整）和<strong>ΔE*00</strong>（CIEDE2000，目前最完善的色差公式）则更接近人眼视觉判断。分光光度计是客观测量颜色的仪器，测量<strong>光谱反射率曲线</strong>，在D65/10°条件下扫描试样，自动计算Lab值和ΔE。标准光源箱则用于<strong>目视对色</strong>，适用于客户对色和最终判定。客观仪器测量和主观目视评价应相互结合，不能互相替代。</p>
+
+<table>
+<thead><tr><th>ΔE范围</th><th>等级</th><th>目视感觉</th><th>判定结论</th></tr></thead>
+<tbody>
+<tr><td>ΔE ≤ 0.2</td><td>5级</td><td>几乎无差异</td><td>完全合格，极高颜色一致性</td></tr>
+<tr><td>0.2 < ΔE ≤ 0.5</td><td>4～5级</td><td>细微差异（需专业判断）</td><td>合格，大多数客户可接受</td></tr>
+<tr><td>0.5 < ΔE ≤ 1.0</td><td>3～4级</td><td>可察觉差异</td><td>一般合格，需与客户确认</td></tr>
+<tr><td>1.0 < ΔE ≤ 1.5</td><td>3级</td><td>明显差异</td><td>需重新对色，成衣厂可能拒收</td></tr>
+<tr><td>ΔE > 1.5</td><td>2级及以下</td><td>显著差异</td><td>不合格，必须重新染色或修色</td></tr>
+</tbody></table>
+
+<h2>三、染色牢度中的颜色评级</h2>
+<p>在染色牢度测试中，颜色变化和沾色程度的评定需要使用<strong>灰色样卡</strong>。GB/T 250（ISO 105-A02）为<strong>变色用灰色样卡</strong>，由五对灰色色块组成，从1级（严重变色）到5级（无变色）。GB/T 251（ISO 105-A03）为<strong>沾色用灰色样卡</strong>，由五对白色与灰色色块组成，评估白色贴衬织物的沾色程度。评级时应在标准光源箱D65光源下，将试样与原样并排，盖灰色样卡进行比较，以最接近的等级作为最终评级结果。对于中间级别可用4～5级、3～4级等半级评级。实际操作中，耐光色牢度的评级略有不同，需使用<strong>蓝色羊毛标准</strong>，对照试样变色程度和蓝色羊毛参照物给出1～8级的耐光等级。</p>
+
+<div class="recommend"><strong>推荐阅读：</strong>
+<a href="021-dyeing-process-印染工艺流程详解.html">印染工艺流程详解——前处理染色印花后整理</a>
+<a href="022-dyeing-types-染色工艺种类.html">染色工艺种类详解——浸染轧染高温高压染色</a>
+<a href="036-eco-certification-环保纺织认证.html">环保纺织认证——OEKO-TEX GOTS bluesign解析</a>
+</div>
+
+<footer>&copy; 2026 纺织知识库 | 数据仅供参考，以官方发布为准</footer></body></html>
