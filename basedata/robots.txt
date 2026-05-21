@@ -1,6 +1,0 @@
-User-agent: *
-Allow: /
-
-Crawl-delay: 10
-
-Sitemap: https://textile-knowledge-base.vercel.app/sitemap.xml
